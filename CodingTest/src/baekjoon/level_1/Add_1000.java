@@ -12,7 +12,7 @@ public class Add_1000 {
 		int A = Integer.parseInt(input.split(" ")[0]);
 		int B = Integer.parseInt(input.split(" ")[1]);
 		
-		System.out.print(A+B);
+		System.out.print(A-B);
 
 	}
 
