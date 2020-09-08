@@ -23,10 +23,6 @@ public class MediumNum_10817 {
 		
 		int[] nums = new int[3];
 		
-		int first = 0;
-		int second = 0;
-		int third = 0;
-		
 		for(int i=0;i<nums.length;i++) {
 			nums[i] = Integer.parseInt(input.split(" ")[i]);
 		}
