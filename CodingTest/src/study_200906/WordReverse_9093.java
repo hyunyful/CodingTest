@@ -1,11 +1,12 @@
 package study_200906;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class WordReverse_9093 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		/*
 		문장이 주어졌을 때, 단어를 모두 뒤집어서 출력하는 프로그램을 작성하시오. 
@@ -27,13 +28,12 @@ public class WordReverse_9093 {
 		
 		Stack stack = new Stack();
 		
-		Scanner scan = new Scanner(System.in);
+		BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
 		
-		int T = scan.nextInt();
-		scan.nextLine();
+		int T = Integer.parseInt(scan.readLine());
 		
 		for(int i=0;i<T;i++) {
-			String input = scan.nextLine();
+			String input = scan.readLine();
 			
 			char[] abc = input.toCharArray();
 			
