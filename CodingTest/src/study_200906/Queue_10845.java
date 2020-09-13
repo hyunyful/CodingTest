@@ -17,6 +17,37 @@ public class Queue_10845 {
 		4.empty: 큐가 비어있으면 1, 아니면 0을 출력한다.
 		5.front: 큐의 가장 앞에 있는 정수를 출력한다. 만약 큐에 들어있는 정수가 없는 경우에는 -1을 출력한다.
 		6.back: 큐의 가장 뒤에 있는 정수를 출력한다. 만약 큐에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+		
+		ex)
+		15
+		push 1
+		push 2
+		front
+		back
+		size
+		empty
+		pop
+		pop
+		pop
+		size
+		empty
+		pop
+		push 3
+		empty
+		front
+		
+		1
+		2
+		2
+		0
+		1
+		2
+		-1
+		0
+		1
+		-1
+		0
+		3
 		*/
 		
 		Queue<Integer> queue = new LinkedList<Integer>();
@@ -30,7 +61,7 @@ public class Queue_10845 {
 			
 			switch(input) {
 				case "pop":		
-					System.out.println(queue.isEmpty()?-1:queue.remove());
+					System.out.println(queue.isEmpty()?-1:queue.poll());
 					break;
 						
 				case "size":
@@ -42,7 +73,7 @@ public class Queue_10845 {
 					break;
 						
 				case "front":
-					System.out.println(queue.isEmpty()?-1:queue.element());
+					System.out.println(queue.isEmpty()?-1:queue.peek());
 					break;
 						
 				case "back":
