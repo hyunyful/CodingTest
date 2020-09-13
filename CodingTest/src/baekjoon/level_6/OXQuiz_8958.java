@@ -54,14 +54,11 @@ public class OXQuiz_8958 {
 				
 				if(temp == 'O') {
 					cnt++;
-					System.out.println(temp+"발견!! cnt는 "+cnt);
 				}else if(temp == 'X'){
 					cnt=0;
-					System.out.println(temp+"발견!! cnt는 "+cnt);
 				}
 				
 				sum = sum+cnt;
-				System.out.println("sum은 "+sum);
 			}
 			
 			System.out.println(sum);
