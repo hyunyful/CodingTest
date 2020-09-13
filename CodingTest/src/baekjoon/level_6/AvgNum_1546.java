@@ -64,24 +64,16 @@ public class AvgNum_1546 {
 		for(int i=0;i<N;i++) {
 			score[i] = Integer.parseInt(input.split(" ")[i]);
 			
-			//System.out.println("score["+i+"]는 "+score[i]);
-			
 			if(score[i] > max) {
 				max = score[i];
 			}
 		}
 		
-		//System.out.println("max는 "+max);
-		
 		for(int i=0;i<newScore.length;i++) {
 			newScore[i] = ((double)score[i])/max*100;
 			
-			//System.out.println("newScore["+i+"]는 "+newScore[i]);
-			
 			sum = sum+newScore[i];
 		}
-		
-		//System.out.println("sum은 "+sum);
 		
 		System.out.println((sum/N));
 
