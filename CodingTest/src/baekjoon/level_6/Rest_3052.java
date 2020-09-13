@@ -47,7 +47,6 @@ public class Rest_3052 {
 			if(!list.contains(n)) {
 				list.add(n);
 			}
-			//System.out.println(arr[i]);
 		}
 		
 		System.out.println(list.size());
