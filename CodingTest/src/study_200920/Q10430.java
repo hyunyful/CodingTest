@@ -2,7 +2,7 @@ package study_200920;
 
 import java.util.Scanner;
 
-public class Rest_10430 {
+public class Q10430 {
 
 	public static void main(String[] args) {
 		
